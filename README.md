@@ -11,4 +11,15 @@ Ports and adapters or hexagonal architecture, is a kind of clean architecture in
 Visual excalidraw representation, of how the layers are setup in terms of dependency:
 ![Ports and adapters layers dependencies](image.png)
 
-These layers will be separated following, what I think is a crucial concern: Dependency regarding to the internals of a company
+> [!TIP]
+> The way I understood this separation of layers is: What is most business dependent goes to the center, as its changeability increases it propagates outwards
+
+On each directory, a deeper explanation will be given about each term. However, that "business dependency" thing that I have mentioned, is crucial for understanding how layers are separated and why. So, here it comes a brief explanation, so you better fasten your seat belt.
+
+### Business dependency in the different layers
+
+As mentioned in the TIP above, the bigger the business is dependent on one piece of code (that represents a function, entity...whatever) the centered will it be place. Imagine a university software built with this architecture.
+
+For a university to be called one, it needs to have (no discussion) certain things. Students, courses, professors...Those entities (and the information each will have) are, what I call, business dependent. Each uni, will save x amount of information that they think its necessary. This classes, will be part of the domain.
+
+Inside domain we will be saving some abstractions that will be used as contracts for third-party software that we use (interfaces for the repository pattern). On top of that, some functions will also be saved. Specially, those that have a really low changeability over the course of time.
