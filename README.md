@@ -41,3 +41,7 @@ Ports and adapters may be a better way for describing this architecture. Having 
 Ports are the domain interfaces (repository patetrn interfaces for example). While adapters are its implementations (for reedish, mongodb...).
 
 This DIP principle has great benefits. Specially, because now our app is completely decoupled (independent and agnostic) from for example, an external ddbb infrastructure.
+
+## Testing
+
+![Tests](image-2.png)
