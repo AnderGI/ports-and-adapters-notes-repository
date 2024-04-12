@@ -9,7 +9,7 @@ Ports and adapters or hexagonal architecture, is a kind of clean architecture in
 - Infratsructure
 
 Visual excalidraw representation, of how the layers are setup in terms of dependency:
-![Ports and adapters dependency layers](image-1.png)
+![Ports and adapters dependency layers](./excalidraw/ports-and-adapters.png)
 
 > [!TIP]
 > The way I understood this separation of layers is: What is most business dependent goes to the center. As its changeability increases it propagates outwards. In other words, external layers will now the layer right beneath it. This increases the possibility to change, add, update new features without considering the change of internal layers. 👍
@@ -44,4 +44,4 @@ This DIP principle has great benefits. Specially, because now our app is complet
 
 ## Testing
 
-![Tests](image-2.png)
+![Tests](./excalidraw/tests.png)
