@@ -1,6 +1,6 @@
 # ports-and-adapters-notes-repository
 
-This repo will be used as a centralized point for all the contents that can have some value having a better understanding of ports and adapters architechture both for back-end front-end.
+This repo will be used as a centralized point for all the contents that can have some value having a better understanding of ports and adapters architechture both for back-end and front-end.
 
 Ports and adapters or hexagonal architecture, is a kind of clean architecture in which code is separated into three different layers (folders):
 
