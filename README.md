@@ -48,16 +48,4 @@ This DIP principle has great benefits. Specially, because now our app is complet
 
 
 
-### Cosas a realizar 
-1.- Intentar migrar el repository de un interface con sus funciones a funciones específicas exportadas como types :
-```
-export interface CarRepository {
-  saveCourse : (course:Course) => Promise<void> 
-}
 
-export type saveCourse = (course:Course) => Promise<void>
-```
-
-2. Añadir testing
-
-3. Añadir currying al repository, basicamente es crear una funcion tipo createCourse que reciba el repository y devueñva a su vez un función anónima que recibe el course : ```createCourse(repository)({parametros del course})```
